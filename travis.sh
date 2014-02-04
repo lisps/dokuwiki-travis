@@ -40,7 +40,7 @@ rm -rf .travis.yml
 # the branch is specified in the $DOKUWIKI environment variable
 echo ">CLONING DOKUWIKI: $DOKUWIKI"
 git init
-git pull https://github.com/splitbrain/dokuwiki.git $DOKUWIKI
+git pull https://github.com/lisps/dokuwiki.git $DOKUWIKI
 
 # install additional requirements
 REQUIRE="lib/plugins/$BASE/requirements.txt"
