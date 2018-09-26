@@ -2,8 +2,8 @@ Travis CI testing for DokuWiki plugins
 ======================================
 
 This repository contains a script that can be used in
-[Travis CI](https://travis-ci.org) to setup the DokuWiki environment to test a
-single plugin.
+[Travis CI](https://travis-ci.org) or [Gitlab-CI](https://about.gitlab.com/gitlab-ci/)
+to setup the DokuWiki environment to test a single plugin.
 
 Setup
 -----
@@ -13,6 +13,8 @@ Use it like this in ``.travis.yml``:
 ```
 language: php
 php:
+  - "7.0"
+  - "5.6"
   - "5.5"
   - "5.4"
   - "5.3"
